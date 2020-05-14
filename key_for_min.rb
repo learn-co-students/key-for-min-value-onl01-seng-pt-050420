@@ -2,8 +2,8 @@
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(name_hash)
-  min = 1000000
-  min_key = :test
+  min = nil
+  min_key = nil
   if name_hash == {}
     min_key = nil
   else
@@ -11,8 +11,6 @@ def key_for_min_value(name_hash)
       if value < min
         min = value
         min_key = key
-      else
-        min_key = min_key
       end
     end
   end
